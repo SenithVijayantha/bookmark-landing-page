@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav>
+      <div
+        class="mobile__nav | hidden bg-neutral-blue text-white tracking-widest uppercase flex-col items-center justify-between h-[100vh] pb-8"
+      >
+        <ul class="w-4/5">
+          <li class="flex justify-between py-6">
+            <a href="#">
+              <img src="./src/assets/images/logo-bookmark.svg" alt="" />
+            </a>
+            <button class="close__nav-btn">
+              <img src="./src/assets/images/close-nav.svg" alt="" />
+            </button>
+          </li>
+          <hr />
+          <li class="text-center py-4">
+            <a href="#">Features</a>
+          </li>
+          <hr />
+          <li class="text-center py-4">
+            <a href="#">Pricing</a>
+          </li>
+          <hr />
+          <li class="text-center py-4">
+            <a href="#">Contact</a>
+          </li>
+          <hr />
+          <li class="text-center py-4">
+            <button class="uppercase font-medium border-2 w-full p-2">
+              Login
+            </button>
+          </li>
+        </ul>
+        <ul class="flex gap-4 items-center">
+          <li>
+            <a href="">
+              <img src="./src/assets/images/icon-facebook.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./src/assets/images/icon-twitter.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class=" px-4 sm:px-8 md:px-16 tracking-widest uppercase">
+        <ul class="flex items-center ">
+          <li class="py-4 mr-auto">
+            <a href="#">
+              <img src="./src/assets/images/logo-bookmark.svg" alt="" />
+            </a>
+          </li>
+
+          <li class="hidden md:block">
+            <ul class="flex items-center justify-between gap-8">
+              <li class="py-4">
+                <a href="#">Features</a>
+              </li>
+
+              <li class="py-4">
+                <a href="#">Pricing</a>
+              </li>
+
+              <li class="py-4">
+                <a href="#">Contact</a>
+              </li>
+
+              <li class="">
+                <button class="bg-primary-red text-white border-none rounded-md uppercase font-medium border-2 py-1 px-6">
+                  Login
+                </button>
+              </li>
+            </ul>
+          </li>
+
+          <li class="md:hidden">
+            <button class="open__nav-btn">
+              <img src="./src/assets/images/open-nav.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script defer src="./src/main.js"></script>
+  </body>
+</html>
