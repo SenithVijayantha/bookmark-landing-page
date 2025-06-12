@@ -106,7 +106,9 @@
     </nav>
 
     <!-- Hero section -->
-    <section class="px-6 sm:px-8 md:px-16 md:flex md:items-center py-16 mt-16 w-full">
+    <section
+      class="px-6 sm:px-8 md:px-16 xl:px-32 md:flex md:items-center py-16 mt-16 w-full"
+    >
       <div class="md:hidden flex justify-center">
         <img
           class="object-contain"
@@ -118,12 +120,12 @@
         class="flex flex-col text-center md:text-start justify-center md:justify-start md:w-[60%]"
       >
         <h1
-          class="mb-6 text-4xl max-[400px]:text-3xl leading-relaxed font-semibold tracking-normal text-neutral-blue md:text-3xl lg:text-4xl"
+          class="mt-12 mb-6 xl:mb-10 text-4xl xl:text-6xl max-[400px]:text-3xl leading-relaxed font-semibold tracking-normal text-neutral-blue md:text-3xl lg:text-4xl"
         >
           A Simple Bookmark Manager
         </h1>
         <p
-          class="mb-6 mx-auto md:mx-0 text-lg font-normal text-gray-500 lg:text-xl max-w-md"
+          class="mb-16 xl:mb-8 mx-auto md:mx-0 text-lg xl:text-2xl font-normal text-gray-500 lg:text-xl max-w-md"
         >
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
@@ -154,10 +156,10 @@
     </section>
 
     <!-- Features section -->
-    <section class="px-6 sm:px-8 md:px-16 py-16">
-      <div class="text-center">
+    <section class="px-6 sm:px-8 md:px-16 xl:px-32 py-16 w-full">
+      <div class="text-center mb-16">
         <h1
-          class="mb-6 text-4xl max-[400px]:text-3xl font-semibold leading-none tracking-normal text-neutral-blue md:text-3xl lg:text-4xl"
+          class="mb-10 text-4xl max-[400px]:text-3xl font-semibold leading-none tracking-normal text-neutral-blue md:text-3xl lg:text-4xl"
         >
           Features
         </h1>
@@ -170,10 +172,10 @@
         </p>
       </div>
 
-      <div class="w-full max-w-4xl mx-auto">
+      <div class="w-full mx-auto">
         <!-- Tabs -->
         <div
-          class="flex flex-col md:flex-row md:justify-between items-center text-center border-b border-gray-300 text-gray-500 font-medium"
+          class="flex flex-col mx-auto md:flex-row md:justify-between max-w-2xl items-center text-center border-b border-gray-300 text-gray-500 font-medium"
         >
           <button
             class="w-max tab-link py-4 border-b-4 border-transparent hover:text-red-500 focus:outline-none"
@@ -196,72 +198,76 @@
         </div>
 
         <!-- Tab Content -->
-        <div id="bookmarking" class="tab-content hidden mt-10">
-          <div class="md:flex md:gap-10">
-            <img
-              src="./src/assets/images/illustration-features-tab-1.svg"
-              alt=""
-              class="w-[80%] mx-auto mb-16 md:w-[40%] max-w-sm"
-            />
-            <div class="flex flex-col gap-6 md:text-start">
-              <h2 class="text-2xl font-semibold">Bookmark in one click</h2>
-              <p class="mt-2 text-gray-600 max-w-md mx-auto">
-                Organize your bookmarks however you like. Our simple
-                drag-and-drop interface gives you complete control over how you
-                manage your favourite sites.
-              </p>
-              <a
-                href="#"
-                class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-              >
-                More info
-              </a>
+        <div class="w-full">
+          <div id="bookmarking" class="tab-content hidden mt-10">
+            <div class="md:flex md:gap-16 md:justify-between items-center">
+              <img
+                src="./src/assets/images/illustration-features-tab-1.svg"
+                alt=""
+                class="w-[80%] mx-auto md:mx-0 mb-16 md:w-[40%] lg:w-[50%]  max-[768px]:max-w-sm"
+              />
+              <div class="flex flex-col gap-6 md:text-start ">
+                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Bookmark in one click</h2>
+                <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
+                >
+                  More info
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div id="searching" class="tab-content mt-10">
-          <div class="md:flex md:gap-10">
-            <img
-              src="./src/assets/images/illustration-features-tab-2.svg"
-              alt=""
-              class="w-[80%] mx-auto mb-16 md:w-[40%] max-w-sm"
-            />
-            <div class="flex flex-col gap-6 md:text-start">
-              <h2 class="text-2xl font-semibold">Intelligent search</h2>
-              <p class="mt-2 text-gray-600 max-w-md mx-auto">
-                Our powerful search feature will help you find saved sites in no
-                time at all. No need to trawl through all of your bookmarks.
-              </p>
-              <a
-                href="#"
-                class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-              >
-                More info
-              </a>
+          <div id="searching" class="tab-content mt-10">
+            <div class="md:flex md:gap-16 md:justify-between items-center">
+              <img
+                src="./src/assets/images/illustration-features-tab-2.svg"
+                alt=""
+                class="w-[80%] mx-auto md:mx-0 mb-16 md:w-[40%] lg:w-[50%]  max-[768px]:max-w-sm"
+              />
+              <div class="flex flex-col gap-6 md:text-start ">
+                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Intelligent search</h2>
+                <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
+                >
+                  More info
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div id="sharing" class="tab-content hidden mt-10">
-          <div class="md:flex md:gap-10">
-            <img
-              src="./src/assets/images/illustration-features-tab-3.svg"
-              alt=""
-              class="w-[80%] mx-auto mb-16 md:w-[40%] max-w-sm"
-            />
-            <div class="flex flex-col gap-6 md:text-start">
-              <h2 class="text-2xl font-semibold">Share your bookmarks</h2>
-              <p class="mt-2 text-gray-600 max-w-md mx-auto">
-                Easily share your bookmarks and collections with others. Create
-                a shareable link that you can send at the click of a button.
-              </p>
-              <a
-                href="#"
-                class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-              >
-                More info
-              </a>
+          <div id="sharing" class="tab-content hidden mt-10">
+            <div class="md:flex md:gap-16 md:justify-between items-center">
+              <img
+                src="./src/assets/images/illustration-features-tab-3.svg"
+                alt=""
+                class="w-[80%] mx-auto md:mx-0 mb-16 md:w-[40%] lg:w-[50%]  max-[768px]:max-w-sm"
+              />
+              <div class="flex flex-col gap-6 md:text-start ">
+                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Share your bookmarks</h2>
+                <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
+                >
+                  More info
+                </a>
+              </div>
             </div>
           </div>
         </div>
