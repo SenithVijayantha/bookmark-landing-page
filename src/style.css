@@ -11,3 +11,7 @@ hr {
 body {
   font-family: "Rubik", sans-serif;
 }
+
+.tab-content {
+  text-align: center;
+}
