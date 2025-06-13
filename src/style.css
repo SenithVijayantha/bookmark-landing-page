@@ -15,17 +15,3 @@ body {
 .tab-content {
   text-align: center;
 }
-
-#accordion .accordion__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: ease-out 0.3s;
-}
-
-#accordion input[type="radio"]:checked + .accordion__content {
-  max-height: 500px;
-  padding-top: 1.5rem;
-  overflow: hidden;
-  
-}
-
