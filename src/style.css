@@ -23,7 +23,7 @@ body {
 }
 
 #accordion input[type="radio"]:checked + .accordion__content {
-  max-height: 500px;
+  max-height: 31.25rem;
   padding-top: 1.5rem;
   overflow: hidden;
   

@@ -5,13 +5,24 @@ const tabLinks = document.querySelectorAll('.tab-link');
 const tabContents = document.querySelectorAll('.tab-content');
 
 function openNav() {
-  mobileNav.classList.toggle('hidden');
-  mobileNav.classList.toggle('flex');
+  mobileNav.classList.remove('hidden');
+  // Wait for next frame to allow transition
+  requestAnimationFrame(() => {
+    mobileNav.classList.add('flex');
+    mobileNav.classList.add('opacity-100', 'translate-y-0');
+    mobileNav.classList.remove('opacity-0', '-translate-y-10');
+  });
 }
 
 function closeNav() {
-  mobileNav.classList.toggle('hidden');
-  mobileNav.classList.toggle('flex');
+  mobileNav.classList.remove('opacity-100', 'translate-y-0');
+  mobileNav.classList.add('opacity-0', '-translate-y-10');
+
+  // Wait for the transition to finish before hiding
+  setTimeout(() => {
+    mobileNav.classList.remove('flex');
+    mobileNav.classList.add('hidden');
+  }, 500); // Same as transition duration
 }
 
 openNavBtn.addEventListener('click', openNav);
