@@ -21,7 +21,11 @@
         <ul class="w-4/5">
           <li class="flex justify-between py-6">
             <a href="#">
-              <img src="./src/assets/images/logo-bookmark.svg" alt="" />
+              <img
+                class="bg-white rounded-md px-4 py-2"
+                src="./src/assets/images/logo-bookmark.svg"
+                alt=""
+              />
             </a>
             <button class="close__nav-btn">
               <img src="./src/assets/images/close-nav.svg" alt="" />
@@ -394,7 +398,7 @@
     </section>
 
     <!-- FAQ section -->
-    <section class="px-6 sm:px-8 md:px-16 xl:px-32 py-56 w-full">
+    <section class="px-6 sm:px-8 md:px-16 xl:px-32 py-16 xl:py-56 w-full">
       <div class="flex flex-col gap-6 text-center mb-12" data-aos="fade-up">
         <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
           Frequently Asked Questions
@@ -406,8 +410,220 @@
       </div>
 
       <!-- Accordion -->
-      
+      <div id="accordion" class="max-w-lg mx-auto lg:text-xl">
+        <div>
+          <label
+            for="first"
+            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
+            >What is Bookmark?<span
+              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
+              >&#x3e;</span
+            ></label
+          >
+          <input
+            class="hidden"
+            type="radio"
+            name="accordion"
+            id="first"
+            checked
+          />
+
+          <div class="accordion__content |">
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+              aut veniam repellat similique officia, veritatis cumque. Sit nobis
+              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
+              tempore illo.
+            </p>
+          </div>
+        </div>
+        <hr class="border-gray-500 my-6" />
+
+        <div>
+          <label
+            for="second"
+            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
+            >How can I request a new browser?<span
+              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
+              >&#x3e;</span
+            ></label
+          >
+          <input
+            class="hidden"
+            type="radio"
+            name="accordion"
+            id="second"
+            checked
+          />
+
+          <div class="accordion__content">
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+              aut veniam repellat similique officia, veritatis cumque. Sit nobis
+              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
+              tempore illo.
+            </p>
+          </div>
+        </div>
+        <hr class="border-gray-500 my-6" />
+
+        <div>
+          <label
+            for="third"
+            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
+            >Is there a mobile app?<span
+              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
+              >&#x3e;</span
+            ></label
+          >
+          <input
+            class="hidden"
+            type="radio"
+            name="accordion"
+            id="third"
+            checked
+          />
+
+          <div class="accordion__content">
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+              aut veniam repellat similique officia, veritatis cumque. Sit nobis
+              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
+              tempore illo.
+            </p>
+          </div>
+        </div>
+        <hr class="border-gray-500 my-6" />
+
+        <div>
+          <label
+            for="fourth"
+            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
+            >What about other Chromium browsers?<span
+              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
+              >&#x3e;</span
+            ></label
+          >
+          <input
+            class="hidden"
+            type="radio"
+            name="accordion"
+            id="fourth"
+            checked
+          />
+
+          <div class="accordion__content">
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+              aut veniam repellat similique officia, veritatis cumque. Sit nobis
+              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
+              tempore illo.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <footer class="text-white">
+      <div class="bg-primary-blue py-8 text-center">
+        <p
+          class="uppercase tracking-[0.5rem] mb-8 text-xs px-12 min-[425px]:max-w-sm md:max-w-fit mx-auto font-medium"
+        >
+          35.000+ ALREADY JOINED
+        </p>
+        <h1
+          class="text-2xl md:text-3xl font-medium max-w-xs md:max-w-md mx-auto"
+        >
+          Stay up-to-date with what we're doing
+        </h1>
+        <div
+          class="flex flex-col md:flex-row mt-8 gap-3 md:gap-6 max-w-xs md:max-w-md mx-auto px-6"
+        >
+          <input
+            class="text-neutral-blue px-4 py-2 h-max rounded-md shadow-md outline-none focus:border-2 focus:border-neutral-blue"
+            placeholder="Enter your email address"
+            type="email"
+            name=""
+            id=""
+          />
+          <a
+            href="#"
+            class="inline-flex h-max items-center justify-center px-5 py-2 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-red rounded-md hover:bg-red-700 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <div class="py-16 md:py-8 bg-neutral-blue uppercase tracking-widest">
+        <!-- Mobile footer -->
+        <ul class="md:hidden">
+          <li class="pb-10">
+            <a href="#">
+              <img
+                class="mx-auto bg-white rounded-md px-4 py-2"
+                src="./src/assets/images/logo-bookmark.svg"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <li class="text-center py-4">
+            <a href="#">Features</a>
+          </li>
+
+          <li class="text-center py-4">
+            <a href="#">Pricing</a>
+          </li>
+
+          <li class="text-center py-4">
+            <a href="#">Contact</a>
+          </li>
+          <li class="pt-8 flex gap-6 items-center justify-center">
+            <a href="">
+              <img src="./src/assets/images/icon-facebook.svg" alt="" />
+            </a>
+
+            <a href="">
+              <img src="./src/assets/images/icon-twitter.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+
+        <!-- Desktop footer -->
+        <ul class="md:px-16 xl:px-32 hidden md:flex md:text-xs lg:text-sm items-center px-8">
+          <li class="pr-12">
+            <a href="#">
+              <img
+                class="mx-auto bg-white rounded-md px-4 py-2 md:w-[80%] lg:w-[100%]"
+                src="./src/assets/images/logo-bookmark.svg"
+                alt=""
+              />
+            </a>
+          </li>
+
+          <li class="text-center pr-6">
+            <a href="#">Features</a>
+          </li>
+
+          <li class="text-center pr-6">
+            <a href="#">Pricing</a>
+          </li>
+
+          <li class="text-center mr-auto">
+            <a href="#">Contact</a>
+          </li>
+          <li class="flex gap-6 items-center justify-center">
+            <a href="">
+              <img src="./src/assets/images/icon-facebook.svg" alt="" />
+            </a>
+
+            <a href="">
+              <img src="./src/assets/images/icon-twitter.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script defer src="./src/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
