@@ -1,56 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    
+    <title>Bookmark Landing Page</title>
   </head>
   <body class="scroll-smooth">
     <nav>
       <!-- Mobile nav -->
-      <div
-        class="mobile__nav | fixed top-0 w-full hidden bg-neutral-blue text-white tracking-widest uppercase flex-col items-center justify-between h-[100vh] pb-8 z-50"
-      >
+      <div class="mobile__nav | bg-neutral-blue fixed top-0 z-50 hidden h-[100vh] w-full flex-col items-center justify-between pb-8 uppercase tracking-widest text-white">
         <ul class="w-4/5">
           <li class="flex justify-between py-6">
             <a href="#">
-              <img
-                class="bg-white rounded-md px-4 py-2"
-                src="./src/assets/images/logo-bookmark.svg"
-                alt=""
-              />
+              <img class="rounded-md bg-white px-4 py-2" src="./src/assets/images/logo-bookmark.svg" alt="" />
             </a>
             <button class="close__nav-btn">
               <img src="./src/assets/images/close-nav.svg" alt="" />
             </button>
           </li>
           <hr />
-          <li class="text-center py-4">
+          <li class="py-4 text-center">
             <a href="#">Features</a>
           </li>
           <hr />
-          <li class="text-center py-4">
+          <li class="py-4 text-center">
             <a href="#">Pricing</a>
           </li>
           <hr />
-          <li class="text-center py-4">
+          <li class="py-4 text-center">
             <a href="#">Contact</a>
           </li>
           <hr />
-          <li class="text-center py-4">
-            <button class="uppercase font-medium border-2 w-full p-2">
-              Login
-            </button>
+          <li class="py-4 text-center">
+            <button class="w-full border-2 p-2 font-medium uppercase">Login</button>
           </li>
         </ul>
-        <ul class="flex gap-4 items-center">
+        <ul class="flex items-center gap-4">
           <li>
             <a href="">
               <img src="./src/assets/images/icon-facebook.svg" alt="" />
@@ -65,11 +55,9 @@
       </div>
 
       <!-- Desktop nav -->
-      <div
-        class="fixed top-0 w-full left-0 z-40 px-4 sm:px-8 md:px-16 tracking-widest uppercase bg-white shadow-md"
-      >
+      <div class="fixed left-0 top-0 z-40 w-full bg-white px-4 uppercase tracking-widest shadow-md sm:px-8 md:px-16">
         <ul class="flex items-center">
-          <li class="py-4 mr-auto hover:scale-110 transition duration-300">
+          <li class="mr-auto py-4 transition duration-300 hover:scale-110">
             <a href="#">
               <img src="./src/assets/images/logo-bookmark.svg" alt="" />
             </a>
@@ -77,30 +65,20 @@
 
           <li class="hidden md:block">
             <ul class="flex items-center justify-between gap-8">
-              <li
-                class="py-4 hover:text-slate-800 hover:scale-110 transition duration-300"
-              >
+              <li class="py-4 transition duration-300 hover:scale-110 hover:text-slate-800">
                 <a href="#">Features</a>
               </li>
 
-              <li
-                class="py-4 hover:text-slate-800 hover:scale-110 transition duration-300"
-              >
+              <li class="py-4 transition duration-300 hover:scale-110 hover:text-slate-800">
                 <a href="#">Pricing</a>
               </li>
 
-              <li
-                class="py-4 hover:text-slate-800 hover:scale-110 transition duration-300"
-              >
+              <li class="py-4 transition duration-300 hover:scale-110 hover:text-slate-800">
                 <a href="#">Contact</a>
               </li>
 
               <li class="">
-                <button
-                  class="bg-primary-red hover:bg-red-600 hover:scale-110 text-white border-none rounded-md uppercase font-medium border-2 py-1 px-6 transition duration-300"
-                >
-                  Login
-                </button>
+                <button class="bg-primary-red rounded-md border-2 border-none px-6 py-1 font-medium uppercase text-white transition duration-300 hover:scale-110 hover:bg-red-600">Login</button>
               </li>
             </ul>
           </li>
@@ -115,182 +93,70 @@
     </nav>
 
     <!-- Hero section -->
-    <section
-      class="px-6 sm:px-8 md:px-16 xl:px-32 md:flex md:items-center py-16 mt-16 w-full"
-    >
-      <div
-        class="md:hidden flex justify-center animate__animated animate__fadeInUp"
-      >
-        <img
-          class="object-contain"
-          src="./src/assets/images/illustration-hero.svg"
-          alt=""
-        />
+    <section class="mt-16 w-full px-6 py-16 sm:px-8 md:flex md:items-center md:px-16 xl:px-32">
+      <div class="animate__animated animate__fadeInUp flex justify-center md:hidden">
+        <img class="object-contain" src="./src/assets/images/illustration-hero.svg" alt="" />
       </div>
-      <div
-        class="flex flex-col text-center md:text-start justify-center md:justify-start md:w-[60%] animate__animated animate__fadeInUp"
-      >
-        <h1
-          class="mt-12 mb-6 xl:mb-10 text-4xl xl:text-6xl max-[400px]:text-3xl leading-relaxed font-semibold tracking-normal text-neutral-blue md:text-3xl lg:text-4xl"
-        >
-          A Simple Bookmark Manager
-        </h1>
-        <p
-          class="mb-16 xl:mb-8 mx-auto md:mx-0 text-lg xl:text-2xl font-normal text-gray-500 lg:text-xl max-w-md"
-        >
-          A clean and simple interface to organize your favourite websites. Open
-          a new browser tab and see your sites load instantly. Try it for free.
-        </p>
-        <div
-          class="flex justify-center md:justify-start gap-6"
-          data-aos="zoom-in"
-        >
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-          >
-            Get it on Chrome
-          </a>
+      <div class="animate__animated animate__fadeInUp flex flex-col justify-center text-center md:w-[60%] md:justify-start md:text-start">
+        <h1 class="text-neutral-blue mb-6 mt-12 text-4xl font-semibold leading-relaxed tracking-normal max-[400px]:text-3xl md:text-3xl lg:text-4xl xl:mb-10 xl:text-6xl">A Simple Bookmark Manager</h1>
+        <p class="mx-auto mb-16 max-w-md text-lg font-normal text-gray-500 md:mx-0 lg:text-xl xl:mb-8 xl:text-2xl">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="flex justify-center gap-6 md:justify-start" data-aos="zoom-in">
+          <a href="#" class="bg-primary-blue inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white transition duration-300 hover:scale-105 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm"> Get it on Chrome </a>
 
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-5 py-3 text-base max-[400px]:text-sm font-medium text-center text-neutral-blue bg-slate-100 rounded-lg shadow-md hover:bg-blue-800 hover:scale-105 hover:text-white focus:ring-4 focus:ring-blue-300 transition duration-300"
-          >
-            Get it on Firefox
-          </a>
+          <a href="#" class="text-neutral-blue inline-flex items-center justify-center rounded-lg bg-slate-100 px-5 py-3 text-center text-base font-medium shadow-md transition duration-300 hover:scale-105 hover:bg-blue-800 hover:text-white focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm"> Get it on Firefox </a>
         </div>
       </div>
-      <div
-        class="hidden md:flex justify-center animate__animated animate__fadeInUp"
-      >
-        <img
-          class="object-contain"
-          src="./src/assets/images/illustration-hero.svg"
-          alt=""
-        />
+      <div class="animate__animated animate__fadeInUp hidden justify-center md:flex">
+        <img class="object-contain" src="./src/assets/images/illustration-hero.svg" alt="" />
       </div>
     </section>
 
     <!-- Features section -->
-    <section class="px-6 sm:px-8 md:px-16 xl:px-32 py-16 w-full">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h1
-          class="mb-10 text-4xl max-[400px]:text-3xl font-semibold leading-none tracking-normal text-neutral-blue md:text-3xl lg:text-4xl"
-        >
-          Features
-        </h1>
-        <p
-          class="mb-6 mx-auto text-lg font-normal text-gray-500 lg:text-xl max-w-md lg:max-w-3xl"
-        >
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
+    <section class="w-full px-6 py-16 sm:px-8 md:px-16 xl:px-32">
+      <div class="mb-16 text-center" data-aos="fade-up">
+        <h1 class="text-neutral-blue mb-10 text-4xl font-semibold leading-none tracking-normal max-[400px]:text-3xl md:text-3xl lg:text-4xl">Features</h1>
+        <p class="mx-auto mb-6 max-w-md text-lg font-normal text-gray-500 lg:max-w-3xl lg:text-xl">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
 
-      <div class="w-full mx-auto">
+      <div class="mx-auto w-full">
         <!-- Tabs -->
-        <div
-          class="flex flex-col mx-auto md:flex-row md:justify-between max-w-2xl items-center text-center border-b border-gray-300 text-gray-500 font-medium"
-          data-aos="zoom-in"
-        >
-          <button
-            class="w-max tab-link py-4 border-b-4 border-transparent hover:text-red-500 focus:outline-none"
-            data-tab="bookmarking"
-          >
-            Simple Bookmarking
-          </button>
-          <button
-            class="w-max tab-link py-4 border-b-4 border-red-500 text-black"
-            data-tab="searching"
-          >
-            Speedy Searching
-          </button>
-          <button
-            class="w-max tab-link py-4 border-b-4 border-transparent hover:text-red-500 focus:outline-none"
-            data-tab="sharing"
-          >
-            Easy Sharing
-          </button>
+        <div class="mx-auto flex max-w-2xl flex-col items-center border-b border-gray-300 text-center font-medium text-gray-500 md:flex-row md:justify-between" data-aos="zoom-in">
+          <button class="tab-link w-max border-b-4 border-transparent py-4 hover:text-red-500 focus:outline-none" data-tab="bookmarking">Simple Bookmarking</button>
+          <button class="tab-link w-max border-b-4 border-red-500 py-4 text-black" data-tab="searching">Speedy Searching</button>
+          <button class="tab-link w-max border-b-4 border-transparent py-4 hover:text-red-500 focus:outline-none" data-tab="sharing">Easy Sharing</button>
         </div>
 
         <!-- Tab Content -->
         <div class="w-full">
-          <div id="bookmarking" class="tab-content hidden mt-10">
-            <div class="md:flex md:gap-16 md:justify-between items-center">
-              <img
-                src="./src/assets/images/illustration-features-tab-1.svg"
-                alt=""
-                class="w-[80%] mx-auto md:mx-0 mb-16 md:w-[40%] lg:w-[50%] max-[768px]:max-w-sm"
-              />
+          <div id="bookmarking" class="tab-content mt-10 hidden">
+            <div class="items-center md:flex md:justify-between md:gap-16">
+              <img src="./src/assets/images/illustration-features-tab-1.svg" alt="" class="mx-auto mb-16 w-[80%] max-[768px]:max-w-sm md:mx-0 md:w-[40%] lg:w-[50%]" />
               <div class="flex flex-col gap-6 md:text-start">
-                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
-                  Bookmark in one click
-                </h2>
-                <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
-                  Organize your bookmarks however you like. Our simple
-                  drag-and-drop interface gives you complete control over how
-                  you manage your favourite sites.
-                </p>
-                <a
-                  href="#"
-                  class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-                >
-                  More info
-                </a>
+                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Bookmark in one click</h2>
+                <p class="mx-auto mt-2 max-w-md text-gray-600 xl:text-lg">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <a href="#" class="bg-primary-blue mx-auto inline-flex max-w-36 items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white transition duration-300 hover:scale-105 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm md:mx-0"> More info </a>
               </div>
             </div>
           </div>
 
           <div id="searching" class="tab-content mt-10">
-            <div class="md:flex md:gap-16 md:justify-between items-center">
-              <img
-                src="./src/assets/images/illustration-features-tab-2.svg"
-                alt=""
-                class="w-[80%] mx-auto md:mx-0 mb-16 md:w-[40%] lg:w-[50%] max-[768px]:max-w-sm"
-                data-aos="fade-up"
-              />
+            <div class="items-center md:flex md:justify-between md:gap-16">
+              <img src="./src/assets/images/illustration-features-tab-2.svg" alt="" class="mx-auto mb-16 w-[80%] max-[768px]:max-w-sm md:mx-0 md:w-[40%] lg:w-[50%]" data-aos="fade-up" />
               <div class="flex flex-col gap-6 md:text-start" data-aos="fade-up">
-                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
-                  Intelligent search
-                </h2>
-                <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
-                  Our powerful search feature will help you find saved sites in
-                  no time at all. No need to trawl through all of your
-                  bookmarks.
-                </p>
-                <a
-                  href="#"
-                  class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-                >
-                  More info
-                </a>
+                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Intelligent search</h2>
+                <p class="mx-auto mt-2 max-w-md text-gray-600 xl:text-lg">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <a href="#" class="bg-primary-blue mx-auto inline-flex max-w-36 items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white transition duration-300 hover:scale-105 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm md:mx-0"> More info </a>
               </div>
             </div>
           </div>
 
-          <div id="sharing" class="tab-content hidden mt-10">
-            <div class="md:flex md:gap-16 md:justify-between items-center">
-              <img
-                src="./src/assets/images/illustration-features-tab-3.svg"
-                alt=""
-                class="w-[80%] mx-auto md:mx-0 mb-16 md:w-[40%] lg:w-[50%] max-[768px]:max-w-sm"
-              />
+          <div id="sharing" class="tab-content mt-10 hidden">
+            <div class="items-center md:flex md:justify-between md:gap-16">
+              <img src="./src/assets/images/illustration-features-tab-3.svg" alt="" class="mx-auto mb-16 w-[80%] max-[768px]:max-w-sm md:mx-0 md:w-[40%] lg:w-[50%]" />
               <div class="flex flex-col gap-6 md:text-start">
-                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
-                  Share your bookmarks
-                </h2>
-                <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
-                  Easily share your bookmarks and collections with others.
-                  Create a shareable link that you can send at the click of a
-                  button.
-                </p>
-                <a
-                  href="#"
-                  class="inline-flex max-w-36 items-center justify-center px-5 py-3 mx-auto md:mx-0 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg hover:bg-blue-800 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-                >
-                  More info
-                </a>
+                <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Share your bookmarks</h2>
+                <p class="mx-auto mt-2 max-w-md text-gray-600 xl:text-lg">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                <a href="#" class="bg-primary-blue mx-auto inline-flex max-w-36 items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white transition duration-300 hover:scale-105 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm md:mx-0"> More info </a>
               </div>
             </div>
           </div>
@@ -299,287 +165,132 @@
     </section>
 
     <!-- Download section -->
-    <section class="px-6 sm:px-8 md:px-16 xl:px-32 py-16 w-full">
-      <div class="flex flex-col gap-6 text-center mb-12" data-aos="fade-up">
-        <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
-          Download the extension
-        </h2>
-        <p class="mt-2 text-gray-600 max-w-md mx-auto lg:text-xl">
-          We've got more browsers in the pipeline. Please do let us know if
-          you've got a favourite you'd like us to prioritize.
-        </p>
+    <section class="w-full px-6 py-16 sm:px-8 md:px-16 xl:px-32">
+      <div class="mb-12 flex flex-col gap-6 text-center" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Download the extension</h2>
+        <p class="mx-auto mt-2 max-w-md text-gray-600 lg:text-xl">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
       </div>
 
-      <div class="xl:flex relative max-w-6xl mx-auto">
-        <div
-          class="flex flex-col mx-auto max-w-fit items-center gap-10 bg-neutral-gray border-2 border-neutral-200 shadow-md rounded-lg mb-8 md:px-6"
-          data-aos="fade-up"
-        >
-          <img
-            src="./src/assets/images/logo-chrome.svg"
-            alt=""
-            class="w-28 mt-10"
-          />
+      <div class="relative mx-auto max-w-6xl xl:flex">
+        <div class="bg-neutral-gray mx-auto mb-8 flex max-w-fit flex-col items-center gap-10 rounded-lg border-2 border-neutral-200 shadow-md md:px-6" data-aos="fade-up">
+          <img src="./src/assets/images/logo-chrome.svg" alt="" class="mt-10 w-28" />
           <div class="text-center">
-            <h2 class="text-2xl font-medium md:text-3xl text-neutral-blue">
-              Add to Chrome
-            </h2>
-            <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
-              Minimum version 62
-            </p>
+            <h2 class="text-neutral-blue text-2xl font-medium md:text-3xl">Add to Chrome</h2>
+            <p class="mx-auto mt-2 max-w-md text-gray-600 xl:text-lg">Minimum version 62</p>
           </div>
-          <div class="flex flex-col gap-6 items-center">
+          <div class="flex flex-col items-center gap-6">
             <img src="./src/assets/images/bg-dots.svg" alt="" />
-            <a
-              href="#"
-              class="inline-flex mb-4 items-center max-w-fit justify-center px-5 py-3 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg shadow-md hover:bg-blue-800 hover:scale-105 hover:text-white focus:ring-4 focus:ring-blue-300 transition duration-300"
-            >
-              Add & Install Extension
-            </a>
+            <a href="#" class="bg-primary-blue mb-4 inline-flex max-w-fit items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-800 hover:text-white focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm"> Add & Install Extension </a>
           </div>
         </div>
 
-        <div
-          class="xl:relative xl:top-20 flex flex-col mx-auto max-w-fit items-center gap-10 bg-neutral-gray border-2 border-neutral-200 shadow-md rounded-lg mb-8 md:px-6"
-          data-aos="fade-up"
-        >
-          <img
-            src="./src/assets/images/logo-firefox.svg"
-            alt=""
-            class="w-28 mt-10"
-          />
+        <div class="bg-neutral-gray mx-auto mb-8 flex max-w-fit flex-col items-center gap-10 rounded-lg border-2 border-neutral-200 shadow-md md:px-6 xl:relative xl:top-20" data-aos="fade-up">
+          <img src="./src/assets/images/logo-firefox.svg" alt="" class="mt-10 w-28" />
           <div class="text-center">
-            <h2 class="text-2xl font-medium md:text-3xl text-neutral-blue">
-              Add to Firefox
-            </h2>
-            <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
-              Minimum version 55
-            </p>
+            <h2 class="text-neutral-blue text-2xl font-medium md:text-3xl">Add to Firefox</h2>
+            <p class="mx-auto mt-2 max-w-md text-gray-600 xl:text-lg">Minimum version 55</p>
           </div>
-          <div class="flex flex-col gap-6 items-center">
+          <div class="flex flex-col items-center gap-6">
             <img src="./src/assets/images/bg-dots.svg" alt="" />
-            <a
-              href="#"
-              class="inline-flex mb-4 items-center max-w-fit justify-center px-5 py-3 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg shadow-md hover:bg-blue-800 hover:scale-105 hover:text-white focus:ring-4 focus:ring-blue-300 transition duration-300"
-            >
-              Add & Install Extension
-            </a>
+            <a href="#" class="bg-primary-blue mb-4 inline-flex max-w-fit items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-800 hover:text-white focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm"> Add & Install Extension </a>
           </div>
         </div>
 
-        <div
-          class="xl:relative xl:top-40 flex flex-col mx-auto max-w-fit items-center gap-10 bg-neutral-gray border-2 border-neutral-200 shadow-md rounded-lg mb-8 md:px-6"
-          data-aos="fade-up"
-        >
-          <img
-            src="./src/assets/images/logo-opera.svg"
-            alt=""
-            class="w-28 mt-10"
-          />
+        <div class="bg-neutral-gray mx-auto mb-8 flex max-w-fit flex-col items-center gap-10 rounded-lg border-2 border-neutral-200 shadow-md md:px-6 xl:relative xl:top-40" data-aos="fade-up">
+          <img src="./src/assets/images/logo-opera.svg" alt="" class="mt-10 w-28" />
           <div class="text-center">
-            <h2 class="text-2xl font-medium md:text-3xl text-neutral-blue">
-              Add to Opera
-            </h2>
-            <p class="mt-2 text-gray-600 max-w-md mx-auto xl:text-lg">
-              Minimum version 46
-            </p>
+            <h2 class="text-neutral-blue text-2xl font-medium md:text-3xl">Add to Opera</h2>
+            <p class="mx-auto mt-2 max-w-md text-gray-600 xl:text-lg">Minimum version 46</p>
           </div>
-          <div class="flex flex-col gap-6 items-center">
+          <div class="flex flex-col items-center gap-6">
             <img src="./src/assets/images/bg-dots.svg" alt="" />
-            <a
-              href="#"
-              class="inline-flex mb-4 items-center max-w-fit justify-center px-5 py-3 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-blue rounded-lg shadow-md hover:bg-blue-800 hover:scale-105 hover:text-white focus:ring-4 focus:ring-blue-300 transition duration-300"
-            >
-              Add & Install Extension
-            </a>
+            <a href="#" class="bg-primary-blue mb-4 inline-flex max-w-fit items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white shadow-md transition duration-300 hover:scale-105 hover:bg-blue-800 hover:text-white focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm"> Add & Install Extension </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ section -->
-    <section class="px-6 sm:px-8 md:px-16 xl:px-32 py-16 xl:py-56 w-full">
-      <div class="flex flex-col gap-6 text-center mb-20" data-aos="fade-up">
-        <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">
-          Frequently Asked Questions
-        </h2>
-        <p class="mt-2 text-gray-600 max-w-md mx-auto lg:text-xl">
-          Here are some of our FAQs. If you have any other questions you'd like
-          answered please feel free to email us.
-        </p>
+    <section class="w-full px-6 py-16 sm:px-8 md:px-16 xl:px-32 xl:py-56">
+      <div class="mb-20 flex flex-col gap-6 text-center" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold md:text-3xl lg:text-4xl">Frequently Asked Questions</h2>
+        <p class="mx-auto mt-2 max-w-md text-gray-600 lg:text-xl">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
       </div>
 
       <!-- Accordion -->
-      <div id="accordion" class="max-w-lg mx-auto lg:text-xl" data-aos="zoom-in">
+      <div id="accordion" class="mx-auto max-w-lg lg:text-xl" data-aos="zoom-in">
         <div>
-          <label
-            for="first"
-            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
-            >What is Bookmark?<span
-              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
-              >&#x3e;</span
-            ></label
-          >
-          <input
-            class="hidden"
-            type="radio"
-            name="accordion"
-            id="first"
-            checked
-          />
+          <label for="first" class="text-neutral-blue hover:text-primary-red flex cursor-pointer justify-between font-medium">What is Bookmark?<span class="accordion__icon | text-primary-blue rotate-90 text-2xl font-semibold">&#x3e;</span></label>
+          <input class="hidden" type="radio" name="accordion" id="first" checked />
 
           <div class="accordion__content |">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-              aut veniam repellat similique officia, veritatis cumque. Sit nobis
-              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
-              tempore illo.
-            </p>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut veniam repellat similique officia, veritatis cumque. Sit nobis iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci tempore illo.</p>
           </div>
         </div>
-        <hr class="border-gray-500 my-6" />
+        <hr class="my-6 border-gray-500" />
 
         <div>
-          <label
-            for="second"
-            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
-            >How can I request a new browser?<span
-              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
-              >&#x3e;</span
-            ></label
-          >
-          <input
-            class="hidden"
-            type="radio"
-            name="accordion"
-            id="second"
-            checked
-          />
+          <label for="second" class="text-neutral-blue hover:text-primary-red flex cursor-pointer justify-between font-medium">How can I request a new browser?<span class="accordion__icon | text-primary-blue rotate-90 text-2xl font-semibold">&#x3e;</span></label>
+          <input class="hidden" type="radio" name="accordion" id="second" checked />
 
           <div class="accordion__content">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-              aut veniam repellat similique officia, veritatis cumque. Sit nobis
-              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
-              tempore illo.
-            </p>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut veniam repellat similique officia, veritatis cumque. Sit nobis iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci tempore illo.</p>
           </div>
         </div>
-        <hr class="border-gray-500 my-6" />
+        <hr class="my-6 border-gray-500" />
 
         <div>
-          <label
-            for="third"
-            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
-            >Is there a mobile app?<span
-              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
-              >&#x3e;</span
-            ></label
-          >
-          <input
-            class="hidden"
-            type="radio"
-            name="accordion"
-            id="third"
-            checked
-          />
+          <label for="third" class="text-neutral-blue hover:text-primary-red flex cursor-pointer justify-between font-medium">Is there a mobile app?<span class="accordion__icon | text-primary-blue rotate-90 text-2xl font-semibold">&#x3e;</span></label>
+          <input class="hidden" type="radio" name="accordion" id="third" checked />
 
           <div class="accordion__content">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-              aut veniam repellat similique officia, veritatis cumque. Sit nobis
-              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
-              tempore illo.
-            </p>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut veniam repellat similique officia, veritatis cumque. Sit nobis iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci tempore illo.</p>
           </div>
         </div>
-        <hr class="border-gray-500 my-6" />
+        <hr class="my-6 border-gray-500" />
 
         <div>
-          <label
-            for="fourth"
-            class="flex justify-between font-medium text-neutral-blue cursor-pointer hover:text-primary-red"
-            >What about other Chromium browsers?<span
-              class="accordion__icon | text-2xl rotate-90 text-primary-blue font-semibold"
-              >&#x3e;</span
-            ></label
-          >
-          <input
-            class="hidden"
-            type="radio"
-            name="accordion"
-            id="fourth"
-            checked
-          />
+          <label for="fourth" class="text-neutral-blue hover:text-primary-red flex cursor-pointer justify-between font-medium">What about other Chromium browsers?<span class="accordion__icon | text-primary-blue rotate-90 text-2xl font-semibold">&#x3e;</span></label>
+          <input class="hidden" type="radio" name="accordion" id="fourth" checked />
 
           <div class="accordion__content">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
-              aut veniam repellat similique officia, veritatis cumque. Sit nobis
-              iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci
-              tempore illo.
-            </p>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut veniam repellat similique officia, veritatis cumque. Sit nobis iusto, facere ipsa delectus repudiandae ut eum totam amet adipisci tempore illo.</p>
           </div>
         </div>
       </div>
     </section>
-    
+
     <!-- Footer section -->
     <footer class="text-white">
       <div class="bg-primary-blue py-8 text-center">
-        <p
-          class="uppercase tracking-[0.5rem] mb-8 text-xs px-12 min-[425px]:max-w-sm md:max-w-fit mx-auto font-medium"
-        >
-          35.000+ ALREADY JOINED
-        </p>
-        <h1
-          class="text-2xl md:text-3xl font-medium max-w-xs md:max-w-md mx-auto"
-        >
-          Stay up-to-date with what we're doing
-        </h1>
-        <div
-          class="flex flex-col md:flex-row mt-8 gap-3 md:gap-6 max-w-xs md:max-w-md mx-auto px-6"
-        >
-          <input
-            class="text-neutral-blue px-4 py-2 h-max rounded-md shadow-sm outline-none focus:border-2 focus:border-neutral-blue"
-            placeholder="Enter your email address"
-            type="email"
-            name=""
-            id=""
-          />
-          <a
-            href="#"
-            class="inline-flex h-max items-center justify-center shadow-md px-5 py-2 text-base max-[400px]:text-sm font-medium text-center text-white bg-primary-red rounded-md hover:bg-red-700 hover:scale-105 focus:ring-4 focus:ring-blue-300 transition duration-300"
-          >
-            Contact Us
-          </a>
+        <p class="mx-auto mb-8 px-12 text-xs font-medium uppercase tracking-[0.5rem] min-[425px]:max-w-sm md:max-w-fit">35.000+ ALREADY JOINED</p>
+        <h1 class="mx-auto max-w-xs text-2xl font-medium md:max-w-md md:text-3xl">Stay up-to-date with what we're doing</h1>
+        <div class="mx-auto mt-8 flex max-w-xs flex-col gap-3 px-6 md:max-w-md md:flex-row md:gap-6">
+          <input class="text-neutral-blue focus:border-neutral-blue h-max rounded-md px-4 py-2 shadow-sm outline-none focus:border-2" placeholder="Enter your email address" type="email" name="" id="" />
+          <a href="#" class="bg-primary-red inline-flex h-max items-center justify-center rounded-md px-5 py-2 text-center text-base font-medium text-white shadow-md transition duration-300 hover:scale-105 hover:bg-red-700 focus:ring-4 focus:ring-blue-300 max-[400px]:text-sm"> Contact Us </a>
         </div>
       </div>
-      <div class="py-16 md:py-8 bg-neutral-blue uppercase tracking-widest">
+      <div class="bg-neutral-blue py-16 uppercase tracking-widest md:py-8">
         <!-- Mobile footer -->
         <ul class="md:hidden">
           <li class="pb-10">
             <a href="#">
-              <img
-                class="mx-auto bg-white rounded-md px-4 py-2"
-                src="./src/assets/images/logo-bookmark.svg"
-                alt=""
-              />
+              <img class="mx-auto rounded-md bg-white px-4 py-2" src="./src/assets/images/logo-bookmark.svg" alt="" />
             </a>
           </li>
 
-          <li class="text-center py-4">
+          <li class="py-4 text-center">
             <a href="#">Features</a>
           </li>
 
-          <li class="text-center py-4">
+          <li class="py-4 text-center">
             <a href="#">Pricing</a>
           </li>
 
-          <li class="text-center py-4">
+          <li class="py-4 text-center">
             <a href="#">Contact</a>
           </li>
-          <li class="pt-8 flex gap-6 items-center justify-center">
+          <li class="flex items-center justify-center gap-6 pt-8">
             <a href="">
               <img src="./src/assets/images/icon-facebook.svg" alt="" />
             </a>
@@ -591,29 +302,25 @@
         </ul>
 
         <!-- Desktop footer -->
-        <ul class="md:px-16 xl:px-32 hidden md:flex md:text-xs lg:text-sm items-center px-8">
+        <ul class="hidden items-center px-8 md:flex md:px-16 md:text-xs lg:text-sm xl:px-32">
           <li class="pr-12">
             <a href="#">
-              <img
-                class="mx-auto bg-white rounded-md px-4 py-2 md:w-[80%] lg:w-[100%]"
-                src="./src/assets/images/logo-bookmark.svg"
-                alt=""
-              />
+              <img class="mx-auto rounded-md bg-white px-4 py-2 md:w-[80%] lg:w-[100%]" src="./src/assets/images/logo-bookmark.svg" alt="" />
             </a>
           </li>
 
-          <li class="text-center pr-6">
+          <li class="pr-6 text-center">
             <a href="#">Features</a>
           </li>
 
-          <li class="text-center pr-6">
+          <li class="pr-6 text-center">
             <a href="#">Pricing</a>
           </li>
 
-          <li class="text-center mr-auto">
+          <li class="mr-auto text-center">
             <a href="#">Contact</a>
           </li>
-          <li class="flex gap-6 items-center justify-center">
+          <li class="flex items-center justify-center gap-6">
             <a href="">
               <img src="./src/assets/images/icon-facebook.svg" alt="" />
             </a>
